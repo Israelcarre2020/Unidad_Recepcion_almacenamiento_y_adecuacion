@@ -120,46 +120,47 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/Sonido43_p20.mp3');
             break;                         
         case 23:
-            audioActual = new Audio('assets/voz/Sonido43_p20.mp3');
+            audioActual = new Audio('assets/voz/Sonido46_ p21.mp3');
             
             break;                         
         case 24:
-           
+            audioActual = new Audio('assets/voz/Sonido51_p22.mp3');
             break;                         
         case 25:         
-            
+        audioActual = new Audio();
             break;      
         case 26:
             $(`.menu_actidades`).removeClass("active_actividad");
             $(`.menu_actidades4`).addClass("active_actividad");
             $("#carouselActividadAprendizaje4").carousel(0);
+            audioActual = new Audio('assets/voz/Sonido52_ p23.mp3');
             
             break;   
         case 27:
-            
+            audioActual = new Audio('assets/voz/Sonido59_ p24.mp3');
            
             break; 
         case 28:
-            
+            audioActual = new Audio('assets/voz/Sonido63_ p26.mp3');
             break;
         case 29:
-            
+            audioActual = new Audio('assets/voz/Sonido60_ p25.mp3');
             break; 
         case 30:
-           
+            audioActual = new Audio('assets/voz/Sonido64_ p27.mp3');
             break;  
         case 31:
-            
+            audioActual = new Audio('assets/voz/Sonido65_ p28.mp3');
             break;    
         case 32:
-
+            audioActual = new Audio('assets/voz/Sonido66_ p29.mp3');
             break;    
         case 33:
-            
+            audioActual = new Audio('assets/voz/Sonido67_ p30.mp3');
             
             break; 
         case 34:
-            
+            audioActual = new Audio();
             break;   
         case 35:
            
@@ -188,6 +189,33 @@ function controlAudioSlides(numeroSlide) {
 $("#audioActivo").click(function() { 
     audioActivoFuncion();
 });
+
+$("#boton_generales").click(function() { 
+    audioActual.pause();
+    audioActual = new Audio('assets/voz/Sonido47_ p21.mp3');
+    audioActual.play(); 
+});
+
+$("#boton_responsable").click(function() { 
+    audioActual.pause();
+    audioActual = new Audio('assets/voz/Sonido48_ p21.mp3');
+    audioActual.play(); 
+});
+
+$("#boton_condiciones").click(function() { 
+    audioActual.pause();
+    audioActual = new Audio('assets/voz/Sonido49_ p21.mp3 ');
+    audioActual.play(); 
+});
+
+
+$("#boton_mezclas").click(function() { 
+    audioActual.pause();
+    audioActual = new Audio('assets/voz/Sonido50_p21.mp3');
+    audioActual.play(); 
+});
+
+
 
 
 $("#cardFront_3").click(function() { 
@@ -1111,24 +1139,7 @@ $('#carouselActividadAprendizaje5').on('slid.bs.carousel', function () {
 
     reproducirAudio(audioLocation);    
 })
-$('#carouselExampleIndicators4').on('slid.bs.carousel', function () {
-    
-    var numeroSlide = $('#carouselExampleIndicators4>div>div.active').index();
-    var audioLocation;
 
-    switch (numeroSlide) {
-        case 0:
-            audioLocation = 'assets/voz/U14D077.mp3';
-            break;
-        case 1:
-            audioLocation = 'assets/voz/U14D078.mp3';
-            break;   
-        default:
-            break;
-    }
-
-    reproducirAudio(audioLocation);    
-})
 $('#carouselExampleIndicators5').on('slid.bs.carousel', function () {
     
     var numeroSlide = $('#carouselExampleIndicators5>div>div.active').index();
@@ -1287,6 +1298,29 @@ $('#carouselExampleIndicators2').on('slid.bs.carousel', function () {
     reproducirAudio(audioLocation);    
 })
 
+$('#carouselExampleIndicatorsX').on('slid.bs.carousel', function () {
+    
+    var numeroSlide = $('#carouselExampleIndicatorsX>div>div.active').index();
+    var audioLocation;
+
+    switch (numeroSlide) {
+        case 0:
+            audioLocation = '';
+            break;
+        case 1:
+            audioLocation = 'assets/voz/Sonido61_p25.mp3';
+            break;  
+        case 2:
+            audioLocation = 'assets/voz/Sonido62_ p25.mp3';
+            break;
+        
+        default:
+            break;
+    }
+
+    reproducirAudio(audioLocation);    
+})
+
 $('#carouselExampleIndicators3').on('slid.bs.carousel', function () {
     
     var numeroSlide = $('#carouselExampleIndicators3>div>div.active').index();
@@ -1322,13 +1356,13 @@ $('#carouselExampleIndicators4').on('slid.bs.carousel', function () {
 
     switch (numeroSlide) {
         case 0:
-            audioLocation = 'assets/voz/Sonido7_p4.mp3';
+            audioLocation = 'assets/voz/Sonido52_ p23.mp3';
             break;
         case 1:
-            audioLocation = 'assets/voz/carousel_1_b.mp3';
+            audioLocation = 'assets/voz/Sonido53_ p23.mp3';
             break;  
         case 2:
-            audioLocation = 'assets/voz/carousel_1_c.mp3';
+            audioLocation = 'assets/voz/Sonido55_ p23.mp3';
             break;
         case 3:
             audioLocation = 'assets/voz/estabien.mp3';
