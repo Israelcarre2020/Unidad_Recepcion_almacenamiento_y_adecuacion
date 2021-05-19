@@ -556,9 +556,9 @@
 
                                     <div class="row"> 
                                         <div class="col-md-12">
-                                         <img  data-toggle="modal" data-target="#modal_boton1" class="col-md-2 offset-md-2 shadow-hover" src="assets/img/boton1.png">
-                                         <img data-toggle="modal" data-target="#modal_boton2" class="col-md-2 offset-md-1 shadow-hover" src="assets/img/boton2.png">
-                                         <img data-toggle="modal" data-target="#modal_boton3" class="col-md-2 offset-md-1 shadow-hover" src="assets/img/boton3.png">
+                                         <img id="modal_1" data-toggle="modal" data-target="#modal_boton1" class="col-md-2 offset-md-2 shadow-hover" src="assets/img/boton1.png">
+                                         <img id="modal_2" data-toggle="modal" data-target="#modal_boton2" class="col-md-2 offset-md-1 shadow-hover" src="assets/img/boton2.png">
+                                         <img id="modal_3" data-toggle="modal" data-target="#modal_boton3" class="col-md-2 offset-md-1 shadow-hover" src="assets/img/boton3.png">
                                         </div>
                                     </div><br>  
                                     
@@ -2027,7 +2027,7 @@
     <div class="modal fade" id="modal_boton1" tabindex="-1" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content" id="m_interruptor">
-                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                <span id="cerrarAudio" class="mod-close" data-dismiss="modal" aria-hidden="true">
                     <i class="fas fa-times-circle fa-3x"></i>
                 </span>
                 <div class="modal-body">
@@ -2049,7 +2049,7 @@
     <div class="modal fade" id="modal_boton2" tabindex="-1" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content" id="m_interruptor">
-                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                <span id="cerrarAudio" class="mod-close" data-dismiss="modal" aria-hidden="true">
                     <i class="fas fa-times-circle fa-3x"></i>
                 </span>
                 <div class="modal-body">
@@ -2073,8 +2073,8 @@
     <div class="modal fade" id="modal_boton3" tabindex="-1" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content" id="m_interruptor">
-                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
-                    <i class="fas fa-times-circle fa-3x"></i>
+                <span  class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i  class="fas fa-times-circle fa-3x"></i>
                 </span>
                 <div class="modal-body">
                     <div class="row">
