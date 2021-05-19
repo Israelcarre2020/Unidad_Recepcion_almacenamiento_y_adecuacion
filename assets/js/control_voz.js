@@ -96,21 +96,22 @@ function controlAudioSlides(numeroSlide) {
             
             break;               
         case 16:
-            
+            audioActual = new Audio('assets/voz/Sonido32_p15.mp3'); 
             break;            
         case 17:
-            
+            audioActual = new Audio('assets/voz/Sonido33_p16.mp3');
             break;            
         case 18:
-            
+            audioActual = new Audio('assets/voz/Sonido34_p17.mp3');
             break;            
         case 19:         
-            
+        audioActual = new Audio();
             break;
         case 20:
             $(`.menu_actidades`).removeClass("active_actividad");
             $(`.menu_actidades3`).addClass("active_actividad");
             $("#carouselActividadAprendizaje3").carousel(0);
+            audioActual = new Audio('assets/voz/Sonido35_p18.mp3');
             break;            
         case 21:
             
