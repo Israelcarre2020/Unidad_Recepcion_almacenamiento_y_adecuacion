@@ -10,13 +10,13 @@ function onLoadAudio() {
 }
 
 function pause_audio() {
-    // audioActual.pause();
+    audioActual.pause();
 }
 
 function controlAudioSlides(numeroSlide) {
 
-    // if(audioActual)
-    //     audioActual.pause();
+    if(audioActual)
+     audioActual.pause();
 
     switch (numeroSlide) {
         case 1:
@@ -26,9 +26,10 @@ function controlAudioSlides(numeroSlide) {
             $(`#tabsObjetivos>div>.tabs>button`).removeClass("active");
             $(`#tabsObjetivos>div>.wrapper_tabcontent>div`).removeClass("active");
             $("#tabObjetivos").addClass("active");
-            $(`#Objetivos`).addClass("active");         
+            $(`#Objetivos`).addClass("active");  
+
         
-            
+
             break;            
         case 3:
             $(`#tabsAprenderas>div>.tabs>button`).removeClass("active");
