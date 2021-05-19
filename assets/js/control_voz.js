@@ -126,10 +126,14 @@ function controlAudioSlides(numeroSlide) {
         case 24:
             audioActual = new Audio('assets/voz/Sonido51_p22.mp3');
             break;                         
-        case 25:         
+        case 25:     
+        $("#quiz-restart-btn").click();
+        $("#quiz-start-btn").click();    
         audioActual = new Audio();
             break;      
         case 26:
+
+           
             $(`.menu_actidades`).removeClass("active_actividad");
             $(`.menu_actidades4`).addClass("active_actividad");
             $("#carouselActividadAprendizaje4").carousel(0);
