@@ -1148,6 +1148,37 @@ $('#carouselExampleIndicators9').on('slid.bs.carousel', function () {
 
     reproducirAudio(audioLocation);    
 })
+
+$('#carouselExampleIndicators1').on('slid.bs.carousel', function () {
+    
+    var numeroSlide = $('#carouselExampleIndicators1>div>div.active').index();
+    var audioLocation;
+
+    switch (numeroSlide) {
+        case 0:
+            audioLocation = 'assets/voz/Sonido7_p4.mp3';
+            break;
+        case 1:
+            audioLocation = 'assets/voz/carousel_1_b.mp3';
+            break;  
+        case 2:
+            audioLocation = 'assets/voz/carousel_1_c.mp3';
+            break;
+        case 3:
+            audioLocation = 'assets/voz/estabien.mp3';
+            break; 
+        case 4:
+            audioLocation = 'assets/voz/U14D142.mp3';
+            break;   
+        default:
+            break;
+    }
+
+    reproducirAudio(audioLocation);    
+})
+
+
+
 $('#carouselExampleIndicators11').on('slid.bs.carousel', function () {
     
     var numeroSlide = $('#carouselExampleIndicators11>div>div.active').index();
