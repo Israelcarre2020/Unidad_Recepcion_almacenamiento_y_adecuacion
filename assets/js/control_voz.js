@@ -92,6 +92,7 @@ function controlAudioSlides(numeroSlide) {
             $(`.menu_actidades`).removeClass("active_actividad");
             $(`.menu_actidades2`).addClass("active_actividad");
             $('#carouselActividadAprendizaje2').carousel(0);
+            audioActual = new Audio('assets/voz/Sonido26_p14.mp3');  
             
             break;               
         case 16:
@@ -1224,6 +1225,94 @@ $('#carouselExampleIndicators1').on('slid.bs.carousel', function () {
 
     reproducirAudio(audioLocation);    
 })
+
+
+$('#carouselExampleIndicators2').on('slid.bs.carousel', function () {
+    
+    var numeroSlide = $('#carouselExampleIndicators2>div>div.active').index();
+    var audioLocation;
+
+    switch (numeroSlide) {
+        case 0:
+            audioLocation = 'assets/voz/Sonido26_p14.mp3';
+            break;
+        case 1:
+            audioLocation = 'assets/voz/carousel_2_b.mp3';
+            break;  
+        case 2:
+            audioLocation = 'assets/voz/carousel_1_c.mp3';
+            break;
+        case 3:
+            audioLocation = 'assets/voz/estabien.mp3';
+            break; 
+        case 4:
+            audioLocation = 'assets/voz/U14D142.mp3';
+            break;   
+        default:
+            break;
+    }
+
+    reproducirAudio(audioLocation);    
+})
+
+$('#carouselExampleIndicators3').on('slid.bs.carousel', function () {
+    
+    var numeroSlide = $('#carouselExampleIndicators3>div>div.active').index();
+    var audioLocation;
+
+    switch (numeroSlide) {
+        case 0:
+            audioLocation = 'assets/voz/Sonido7_p4.mp3';
+            break;
+        case 1:
+            audioLocation = 'assets/voz/carousel_1_b.mp3';
+            break;  
+        case 2:
+            audioLocation = 'assets/voz/carousel_1_c.mp3';
+            break;
+        case 3:
+            audioLocation = 'assets/voz/estabien.mp3';
+            break; 
+        case 4:
+            audioLocation = 'assets/voz/U14D142.mp3';
+            break;   
+        default:
+            break;
+    }
+
+    reproducirAudio(audioLocation);    
+})
+
+$('#carouselExampleIndicators4').on('slid.bs.carousel', function () {
+    
+    var numeroSlide = $('#carouselExampleIndicators4>div>div.active').index();
+    var audioLocation;
+
+    switch (numeroSlide) {
+        case 0:
+            audioLocation = 'assets/voz/Sonido7_p4.mp3';
+            break;
+        case 1:
+            audioLocation = 'assets/voz/carousel_1_b.mp3';
+            break;  
+        case 2:
+            audioLocation = 'assets/voz/carousel_1_c.mp3';
+            break;
+        case 3:
+            audioLocation = 'assets/voz/estabien.mp3';
+            break; 
+        case 4:
+            audioLocation = 'assets/voz/U14D142.mp3';
+            break;   
+        default:
+            break;
+    }
+
+    reproducirAudio(audioLocation);    
+})
+
+
+
 
 
 
