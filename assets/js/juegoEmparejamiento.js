@@ -24,14 +24,74 @@ function init() {
         });
     }
 
-    // Create the card slots
-    var words = ['...', '...', '...', '...'];
-    for (var i = 1; i <= words.length; i++) {
-        $('<p class="btn btn-warning" style="width:85%">' + words[i - 1] + '</p>').data('number', i).appendTo('#cardSlots').droppable({
+
+    for (var i = 1; i <= numbers.length; i++) {
+
+        if(i == 1){
+        $('<p  class="btn btn-warning" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots1').droppable({
             accept: '#cardPile p',
             hoverClass: 'hovered',
-            drop: handleCardDrop
+            drop: handleCardDrop,
+            over: function(event, ui) {
+                ui.draggable.draggable('option','revert',false);
+            },
+            out: function(event, ui) {
+                ui.draggable.draggable('option','revert',true);
+            }
         });
+
+        $(' <p class="justificado p_black dashed-box">Pérdida de agua</p>').appendTo('#corrosivoJuego')
+    }
+
+    if(i == 2){
+        $('<p class="btn btn-warning" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots3').droppable({
+            accept: '#cardPile p',
+            hoverClass: 'hovered',
+            drop: handleCardDrop,
+            over: function(event, ui) {
+                ui.draggable.draggable('option','revert',false);
+            },
+            out: function(event, ui) {
+                ui.draggable.draggable('option','revert',true);
+            }
+        });
+
+        $('<p class="justificado p_black dashed-box">Destrucción de ácidos grasos insaturados, pérdida de vitaminas.</p></p>').appendTo('#toxicoJuego')
+
+    }
+
+    if(i == 3){
+        $('<p class="btn btn-warning" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots4').droppable({
+            accept: '#cardPile p',
+            hoverClass: 'hovered',
+            drop: handleCardDrop,
+            over: function(event, ui) {
+                ui.draggable.draggable('option','revert',false);
+            },
+            out: function(event, ui) {
+                ui.draggable.draggable('option','revert',true);
+            }
+        });
+
+        $('<p class="justificado p_black dashed-box" >Fotodegradación</p></p>').appendTo('#fuegoJuego');
+    }
+
+    if(i == 4){
+        $('<p class="btn btn-warning" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots5').droppable({
+            accept: '#cardPile p',
+            hoverClass: 'hovered',
+            drop: handleCardDrop,
+            over: function(event, ui) {
+                ui.draggable.draggable('option','revert',false);
+            },
+            out: function(event, ui) {
+                ui.draggable.draggable('option','revert',true);
+            }
+        });
+
+        $('<p class="justificado p_black dashed-box">Ganancia de agua</p></p>').appendTo('#explosionJuego');
+    }
+        
     }
 
 }

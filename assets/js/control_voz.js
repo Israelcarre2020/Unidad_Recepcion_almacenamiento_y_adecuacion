@@ -27,7 +27,7 @@ function controlAudioSlides(numeroSlide) {
             $(`#tabsObjetivos>div>.wrapper_tabcontent>div`).removeClass("active");
             $("#tabObjetivos").addClass("active");
             $(`#Objetivos`).addClass("active");         
-            
+        
             
             break;            
         case 3:

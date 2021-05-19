@@ -2099,7 +2099,7 @@ picture img {
   transition: transform .8s cubic-bezier(.63,-0.32,.4,1.39);
   border-radius: 20px;
   background-color: #eae9e9;
-  height: 230px;
+  height: 260px;
   width: 300px;
   border: 2px #D5D3CF solid;
 }
@@ -2121,7 +2121,7 @@ picture img {
 .card-back{
     background-color: #4472c4;
     color: white;
-    top: -230px;
+    top: -260px;
 }
 
 .card-back .card-body {
@@ -2134,7 +2134,7 @@ picture img {
     border-bottom-left-radius: 20px;
     width: 150px;
     height: 230px;
-    padding: 20px;
+    
     padding-top: 70px
 }
 
@@ -2493,4 +2493,14 @@ picture img {
 
 .medidoresModal{
     width: 9rem;
+
+}
+
+.centerDiv{
+    display: flex; 
+    justify-content: center;
+}
+
+.iconoVario{
+    width: 15rem;
 }
