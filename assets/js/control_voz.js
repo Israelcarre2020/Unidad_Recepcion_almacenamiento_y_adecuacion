@@ -35,7 +35,8 @@ function controlAudioSlides(numeroSlide) {
             $(`#tabsAprenderas>div>.tabs>button`).removeClass("active");
             $(`#tabsAprenderas>div>.wrapper_tabcontent>div`).removeClass("active");
             $("#tabUnidad_aprenderas").addClass("active");
-            $(`#unidad_aprenderas`).addClass("active");        
+            $(`#unidad_aprenderas`).addClass("active");      
+            audioActual = new Audio('assets/voz/Sonido5_p3.mp3');  
 
             
             break;            
@@ -889,10 +890,10 @@ function audioTabs(opcion) {
             audioLocation = 'assets/voz/Sonido4_p2.mp3 ';
             break;
         case 'unidad_aprenderas':
-            audioLocation = 'assets/voz/U14D005.mp3';
+            audioLocation = 'assets/voz/Sonido5_p3.mp3';
             break;
         case 'unidad_necesitas':
-            audioLocation = 'assets/voz/U14D006.mp3';
+            audioLocation = 'assets/voz/Sonido6_p3.mp3';
             break;
 
         default:
