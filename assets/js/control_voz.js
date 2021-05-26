@@ -48,44 +48,64 @@ function controlAudioSlides(numeroSlide) {
             
             break;            
         case 5:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
                 $('.pasos-conceptos').hide();
                 $('.conceptos1').show().css({ 'opacity': 0, 'bottom': '-100px' }).animate({ 'opacity': '1', 'bottom': 0 }, 1000);;            
                 audioActual = new Audio('assets/voz/Sonido14_p5.mp3');  
             break;    
         case 6:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido15_p6.mp3');  
             break;                                              
         case 7:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido19_ p7.mp3');  
             //$('#carouselActividadAprendizaje2').carousel(0);
             
             break;                                              
         case 8:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido20_p8.mp3');  
             //$(".comentariosFrecuencia").hide();           
             
             break;            
         case 9:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido21_p9.mp3');  
             //$("#carouselFrecuencia").carousel(0);
             
             break;            
         case 10:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido22_p10.mp3');  
             //$("#carouselGeneracionCorriente").carousel(0);
             
             break;            
         case 11:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido23_p11.mp3');  
             
             break;            
         case 12:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido24_p12.mp3');  
             break;
-        case 13:      
+        case 13:   
+        $(`.menu_actidades`).removeClass("active_actividad");
+        $(`.menu_actidades1`).addClass("active_actividad");   
         audioActual = new Audio('assets/voz/Sonido25_p13.mp3');  
             break;            
         case 14:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             audioActual = new Audio();  
             break;            
         case 15:
@@ -96,15 +116,23 @@ function controlAudioSlides(numeroSlide) {
             
             break;               
         case 16:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades2`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido32_p15.mp3'); 
             break;            
         case 17:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades2`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido33_p16.mp3');
             break;            
         case 18:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades2`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido34_p17.mp3');
             break;            
-        case 19:         
+        case 19: 
+        $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades2`).addClass("active_actividad");        
         audioActual = new Audio();
             break;
         case 20:
@@ -114,19 +142,27 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/Sonido35_p18.mp3');
             break;            
         case 21:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades3`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido42_p19.mp3');
             break;                         
         case 22:
             audioActual = new Audio('assets/voz/Sonido43_p20.mp3');
             break;                         
         case 23:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades3`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido46_ p21.mp3');
             
             break;                         
         case 24:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades3`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido51_p22.mp3');
             break;                         
-        case 25:     
+        case 25:    
+        $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades3`).addClass("active_actividad"); 
         $("#quiz-restart-btn").click();
         $("#quiz-start-btn").click();    
         audioActual = new Audio();
@@ -141,29 +177,45 @@ function controlAudioSlides(numeroSlide) {
             
             break;   
         case 27:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido59_ p24.mp3');
            
             break; 
         case 28:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido63_ p26.mp3');
             break;
         case 29:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido60_ p25.mp3');
             break; 
         case 30:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido64_ p27.mp3');
             break;  
         case 31:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido65_ p28.mp3');
             break;    
         case 32:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido66_ p29.mp3');
             break;    
         case 33:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido67_ p30.mp3');
             
             break; 
         case 34:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio();
             break;   
         case 35:
