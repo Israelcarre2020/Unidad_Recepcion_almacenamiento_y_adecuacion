@@ -4,34 +4,41 @@ $(document).ready(function () {
     
     init();
 });
-function init() {
+
+function init2() {
     // Reset the game
     correctCards = 0;
+   
     $('#cardPile').html('');
     $('#cardSlots').html('');
+    $('#cardSlots1').html('');
+    $('#cardSlots2').html('');
+    $('#cardSlots3').html('');
+    $('#cardSlots4').html('');
+    $('#cardSlots5').html('');
 
     // Create the pile of shuffled cards
     var columnaOrigen = ['Desecación', 'Oxidación', 'Luz', 'Absorción'];
     var numbers = [1, 2, 3, 4];
     numbers.sort(function () { return Math.random() - .5 });
 
+
     for (var i = 0; i < numbers.length; i++) {
         $('<p class="btn btn-warning boton-juego" style="width:100%">' + columnaOrigen[numbers[i]-1] + '</p>').data('number', numbers[i]).attr('id', 'cardEmparejamiento' + numbers[i]).appendTo('#cardPile').draggable({
             containment: '#contentEmparejamiento',
             stack: '#cardPile p',
             cursor: 'move',
-            revert: false
+            revert: true
         });
     }
 
-
-    for (var i = 1; i <= numbers.length; i++) {
-
-        if(i == 1){
-        $('<p  class="btn btn-warning" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots1').droppable({
+    // Create the card slots
+    var words = ['...', '...', '...', '...'];
+    for (var i = 1; i <= words.length; i++) {
+        $('<p class="btn btn-warning" style="width:85%;">' + words[i - 1] + '</p>').data('number', i).appendTo('#cardSlots').droppable({
             accept: '#cardPile p',
             hoverClass: 'hovered',
-            drop: handleCardDrop,
+            drop: handleCardDrop, 
             over: function(event, ui) {
                 ui.draggable.draggable('option','revert',false);
             },
@@ -39,15 +46,43 @@ function init() {
                 ui.draggable.draggable('option','revert',true);
             }
         });
-
-        $(' <p class="justificado p_black dashed-box">Pérdida de agua</p>').appendTo('#corrosivoJuego')
     }
 
-    if(i == 2){
-        $('<p class="btn btn-warning" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots3').droppable({
+}
+function init() {
+    // Reset the game
+    correctCards = 0;
+    intentosEmparejamiento = 0;
+    $('#cardPile').html('');
+    $('#cardSlots').html('');
+    $('#cardSlots1').html('');
+    $('#cardSlots2').html('');
+    $('#cardSlots3').html('');
+    $('#cardSlots4').html('');
+    $('#cardSlots5').html('');
+
+    // Create the pile of shuffled cards
+    var columnaOrigen = ['Desecación', 'Oxidación', 'Luz', 'Absorción'];
+    var numbers = [1, 2, 3, 4];
+    numbers.sort(function () { return Math.random() - .5 });
+
+
+    for (var i = 0; i < numbers.length; i++) {
+        $('<p class="btn btn-warning boton-juego" style="width:100%">' + columnaOrigen[numbers[i]-1] + '</p>').data('number', numbers[i]).attr('id', 'cardEmparejamiento' + numbers[i]).appendTo('#cardPile').draggable({
+            containment: '#contentEmparejamiento',
+            stack: '#cardPile p',
+            cursor: 'move',
+            revert: true
+        });
+    }
+
+    // Create the card slots
+    var words = ['...', '...', '...', '...'];
+    for (var i = 1; i <= words.length; i++) {
+        $('<p class="btn btn-warning" style="width:85%;">' + words[i - 1] + '</p>').data('number', i).appendTo('#cardSlots').droppable({
             accept: '#cardPile p',
             hoverClass: 'hovered',
-            drop: handleCardDrop,
+            drop: handleCardDrop, 
             over: function(event, ui) {
                 ui.draggable.draggable('option','revert',false);
             },
@@ -55,43 +90,6 @@ function init() {
                 ui.draggable.draggable('option','revert',true);
             }
         });
-
-        $('<p class="justificado p_black dashed-box">Destrucción de ácidos grasos insaturados, pérdida de vitaminas.</p></p>').appendTo('#toxicoJuego')
-
-    }
-
-    if(i == 3){
-        $('<p class="btn btn-warning" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots4').droppable({
-            accept: '#cardPile p',
-            hoverClass: 'hovered',
-            drop: handleCardDrop,
-            over: function(event, ui) {
-                ui.draggable.draggable('option','revert',false);
-            },
-            out: function(event, ui) {
-                ui.draggable.draggable('option','revert',true);
-            }
-        });
-
-        $('<p class="justificado p_black dashed-box" >Fotodegradación</p></p>').appendTo('#fuegoJuego');
-    }
-
-    if(i == 4){
-        $('<p class="btn btn-warning" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots5').droppable({
-            accept: '#cardPile p',
-            hoverClass: 'hovered',
-            drop: handleCardDrop,
-            over: function(event, ui) {
-                ui.draggable.draggable('option','revert',false);
-            },
-            out: function(event, ui) {
-                ui.draggable.draggable('option','revert',true);
-            }
-        });
-
-        $('<p class="justificado p_black dashed-box">Ganancia de agua</p></p>').appendTo('#explosionJuego');
-    }
-        
     }
 
 }
@@ -157,6 +155,7 @@ function validarResultado(){
                 'Puedes intentarlo de nuevo',
                 'error'
             )
+            init2();
         }
     }
 }

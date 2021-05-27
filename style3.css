@@ -2204,6 +2204,12 @@ picture img {
     padding: 20px 35px;
 }
 
+.ajusteImagen{
+    width: 10rem;
+}
+
+
+
 .card-title2 {
     height: 230px;
     width: 400px;
@@ -2314,7 +2320,15 @@ picture img {
 
  }
 
+ .mostrarImagen{
+    width: 5rem
+}
+
  @media screen and (max-width: 800px) {
+
+    .mostrarImagen{
+        display: none;
+    }
 
   
  .iconoFuego{
