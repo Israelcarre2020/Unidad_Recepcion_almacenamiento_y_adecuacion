@@ -2208,6 +2208,11 @@ picture img {
     width: 10rem;
 }
 
+.ajusteImagen2{
+    width: 20rem;
+}
+
+
 
 
 .card-title2 {
@@ -2323,6 +2328,8 @@ picture img {
  .mostrarImagen{
     width: 5rem
 }
+
+
 
  @media screen and (max-width: 800px) {
 
