@@ -160,6 +160,13 @@ $(document).ready(function () {
         var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"))+1;
          
         switch (stepIndex) {
+            case 4:
+                // pause_audio();
+                $(".divcontenido").animate({ width: 'hide' }); 
+                $(".menu-actividades").show(1000); 
+                setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
+                $(".controls-slide").hide();
+                break;
             case 15:
                 // pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
