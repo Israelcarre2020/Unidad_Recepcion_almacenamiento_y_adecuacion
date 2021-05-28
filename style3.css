@@ -318,7 +318,7 @@ a.article:hover {
     width: 18rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
     .imagen100{
         width: 30rem;
@@ -2205,7 +2205,7 @@ picture img {
 }
 
 .ajusteImagen{
-    width: 10rem;
+    width: 6rem;
 }
 
 .ajusteImagen2{
@@ -2538,5 +2538,5 @@ picture img {
 }
 
 .iconoVario{
-    width: 15rem;
+    width: 5rem;
 }
